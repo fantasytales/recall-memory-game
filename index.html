@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Recall Memory Games</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Recall Memory Games</h1>
+
+  <div class="timer-bar-container">
+    <div class="timer-bar" id="timerBar"></div>
+  </div>
+
+  <div class="stats">
+    <span id="moves">Moves: 0</span>
+    <button id="restartBtn">Restart</button>
+    <button id="muteBtn">🔊 Sound</button>
+  </div>
+
+  <div class="game-container">
+    <div class="game-board" id="gameBoard"></div>
+  </div>
+
+  <div id="endScreen" class="end-screen hidden">
+    <div class="end-message">
+      <h2 id="endTitle"></h2>
+      <p id="endText"></p>
+      <button onclick="initGame()">Play Again</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
